@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HAIDARI — YOUSUF IS HERE</title>
+  <meta name="description" content="Modern modest wear — tradition with premium energy." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Cinzel -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Ambient background -->
+  <div class="bg">
+    <div class="grain"></div>
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="wrap header__inner">
+      <a class="brand" href="#top" aria-label="HAIDARI Home">
+        <!-- Put your logo at: assets/logo.png -->
+        <img class="brand__logo" src="assets/logo.png" alt="HAIDARI logo" />
+        <div class="brand__text">
+          <div class="brand__name">HAIDARI</div>
+          <div class="brand__tag">YOUSUF IS HERE</div>
+        </div>
+      </a>
+
+      <nav class="nav">
+        <a href="#shop">Shop</a>
+        <a href="#about">About</a>
+        <a href="#policies">Policies</a>
+        <button class="cartBtn" id="openCartBtn" aria-label="Open cart">
+          <span>Cart</span>
+          <span class="pill" id="cartCount">0</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <div class="badge">
+            <span class="dot"></span>
+            <span>LAUNCH SALE — <strong>10% OFF</strong> • Ends in <span id="countdown">--:--:--</span></span>
+          </div>
+
+          <h1 class="h1">
+            Modest wear with
+            <span class="neon">power</span>,
+            <span class="neon">presence</span>,
+            and tradition.
+          </h1>
+
+          <p class="sub">
+            Premium Thobes, Kanduras, Shalwar Kameez, and Kaftans — modern energy, respectful roots.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#shop">Shop Drop</a>
+            <button class="btn btn--ghost" id="scrollPreviewBtn">Preview Pieces</button>
+          </div>
+
+          <div class="hero__facts">
+            <div class="fact">
+              <div class="fact__top">Shipping</div>
+              <div class="fact__bot">Canada + USA</div>
+            </div>
+            <div class="fact">
+              <div class="fact__top">Free Shipping</div>
+              <div class="fact__bot">When you buy 2+ items</div>
+            </div>
+            <div class="fact">
+              <div class="fact__top">Returns</div>
+              <div class="fact__bot">14 days • Refund 30 days</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="glassCard tilt">
+            <div class="glassCard__top">
+              <div class="scanline"></div>
+              <div class="title">DROP 01</div>
+              <div class="subtitle">FOUNDATION</div>
+            </div>
+            <div class="glassCard__mid">
+              <div class="ring"></div>
+              <div class="ring ring--2"></div>
+              <div class="ring ring--3"></div>
+            </div>
+            <div class="glassCard__bot">
+              <div class="tiny">Dark Navy • Black • Neon Green Accent</div>
+              <div class="tiny">Sizes: S / M / L / XL</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrap marquee">
+        <div class="marquee__track">
+          <span>HAIDARI</span><span>•</span><span>YOUSUF IS HERE</span><span>•</span>
+          <span>PREMIUM MODEST WEAR</span><span>•</span><span>CANADA + USA</span><span>•</span>
+          <span>10% LAUNCH SALE</span><span>•</span><span>FREE SHIPPING 2+ ITEMS</span><span>•</span>
+          <span>HAIDARI</span><span>•</span><span>YOUSUF IS HERE</span><span>•</span>
+          <span>PREMIUM MODEST WEAR</span><span>•</span><span>CANADA + USA</span><span>•</span>
+          <span>10% LAUNCH SALE</span><span>•</span><span>FREE SHIPPING 2+ ITEMS</span><span>•</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Shop -->
+    <section class="section" id="shop">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 class="h2">Shop Drop</h2>
+          <p class="muted">10% launch discount is applied automatically in cart.</p>
+        </div>
+
+        <div class="grid" id="productGrid"></div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="wrap about">
+        <div class="about__card">
+          <h2 class="h2">About HAIDARI</h2>
+          <p class="muted">
+            HAIDARI is modern modest wear built with premium energy. Tradition stays respected, while the look feels sharp, clean, and confident.
+          </p>
+          <div class="about__bullets">
+            <div class="chip">Premium pricing</div>
+            <div class="chip">Modern + traditional</div>
+            <div class="chip">Canada + USA</div>
+            <div class="chip">Drop culture</div>
+          </div>
+        </div>
+
+        <div class="about__card">
+          <h3 class="h3">Launch Rules</h3>
+          <ul class="list">
+            <li><strong>Free shipping</strong> when you buy <strong>2+</strong> items</li>
+            <li><strong>Returns</strong> within <strong>14 days</strong> of delivery</li>
+            <li><strong>Refund</strong> processed within <strong>30 days</strong> after approval</li>
+          </ul>
+          <div class="note">
+            Tip: When you’re ready for real payments, connect checkout to Shopify or Stripe.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Policies -->
+    <section class="section" id="policies">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 class="h2">Policies</h2>
+          <p class="muted">Clear, simple, professional.</p>
+        </div>
+
+        <div class="policies">
+          <div class="policyCard">
+            <h3 class="h3">Shipping</h3>
+            <p>We ship to Canada and the USA. Free shipping applies automatically when your cart has 2 or more items.</p>
+          </div>
+
+          <div class="policyCard">
+            <h3 class="h3">Returns</h3>
+            <p>Returns are accepted within 14 days of delivery, as long as items are unworn and in original condition.</p>
+          </div>
+
+          <div class="policyCard">
+            <h3 class="h3">Refunds</h3>
+            <p>Refunds are processed within 30 days after approval, using the original payment method.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+      <div class="wrap footer__inner">
+        <div>
+          <div class="footer__brand">HAIDARI</div>
+          <div class="muted">YOUSUF IS HERE</div>
+        </div>
+
+        <div class="footer__links">
+          <a href="#shop">Shop</a>
+          <a href="#about">About</a>
+          <a href="#policies">Policies</a>
+          <a href="mailto:businessimageal@gmail.com">businessimageal@gmail.com</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Cart Drawer -->
+  <aside class="cart" id="cartDrawer" aria-hidden="true">
+    <div class="cart__overlay" id="cartOverlay"></div>
+    <div class="cart__panel">
+      <div class="cart__head">
+        <div>
+          <div class="cart__title">Your Cart</div>
+          <div class="muted small" id="shippingHint">—</div>
+        </div>
+        <button class="iconBtn" id="closeCartBtn" aria-label="Close cart">✕</button>
+      </div>
+
+      <div class="cart__items" id="cartItems"></div>
+
+      <div class="cart__summary">
+        <div class="row">
+          <span class="muted">Subtotal</span>
+          <span id="subtotal">$0.00</span>
+        </div>
+        <div class="row">
+          <span class="muted">Launch discount (10%)</span>
+          <span id="discount">-$0.00</span>
+        </div>
+        <div class="row">
+          <span class="muted">Shipping</span>
+          <span id="shipping">$0.00</span>
+        </div>
+        <div class="row total">
+          <span>Total</span>
+          <span id="total">$0.00</span>
+        </div>
+
+        <button class="btn btn--primary w100" id="checkoutBtn">
+          Checkout
+        </button>
+        <div class="muted tiny center">
+          Checkout can be linked to Shopify/Stripe later.
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <script src="app.js"></script>
+</body>
+</html>
